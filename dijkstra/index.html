@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>最小生成树</title>
+		<script type="text/javascript" src="js/main.js"></script>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse" role="navigation">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					
+					<a class="navbar-brand" href="../index.html">经典算法演示</a>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="../LCS/index.html">最长公共子序列</a></li>
+						<li><a href="../MCM/index.html">矩阵链相乘</a></li>
+						<li><a href="../MColor/index.html">M着色问题</a></li>
+						<li><a href="../prim/index.html">Prim算法</a></li>
+						<li><a href="../kruskal/index.html">Kruskal算法</a></li>
+						<li><a href="../dijkstra/index.html">Dijkstra算法</a></li>
+						<li><a href="../index.html">更多</a></li>
+					</ul>
+					
+					
+					</div><!-- /.navbar-collapse -->
+					</div><!-- /.container-fluid -->
+					
+				</nav>
+				<div class="panel-bg container">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-1 table-area">
+							<div id='table'><h2>最短路径演示(Dijkstra算法)</h2></br></div>
+							<canvas id="main" style="display:block;border: solid 1px; margin: 0 auto;"></canvas>
+						</div>
+						<div class="col-md-4">
+							<button type="button" class="btn btn-success" id="clear" onclick="init()">清除</button>
+							<button type="button" class="btn btn-success" id="line" onclick="line()">连线</button>
+							<button type="button" class="btn btn-success" id="sure" onclick="sure()">确定</button>
+							<div class="btn-group" role="group">
+								<button type="button" class="btn btn-primary" onclick="star()" disabled="disabled" id="star">开始</button>
+								<button type="button" class="btn btn-primary" disabled="disabled" id="stop" onclick="stop()">暂停</button>
+								<button type="button" class="btn btn-primary" disabled="disabled" id="next" onclick="next()">下一步</button>
+							</div>
+							<div class="well info" id="info">
+								<ol>
+								</ol>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</body>
+		</html>
